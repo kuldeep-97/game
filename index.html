@@ -1,0 +1,281 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Number Guessing  Game - Horizontal Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="disclaimer">
+        <h2>अस्वीकृति (Disclaimer)</h2>
+        <p>इस खेल का उद्देश्य केवल मनोरंजन है और यह किसी भी प्रकार की वित्तीय या वास्तविक पुरस्कार की गारंटी नहीं देता है। उपयोगकर्ता इस खेल के सभी नियमों और शर्तों को स्वीकार करते हैं। खेल के दौरान किए गए किसी भी अनुमान या उत्तर की सटीकता की कोई गारंटी नहीं है। यदि आप किसी भी तरह की समस्याओं का सामना करते हैं या इस खेल से संबंधित किसी भी प्रकार की चिंता है, तो कृपया उचित प्राधिकृत कानूनी सलाह प्राप्त करें।</p>
+        <p>हम इस खेल को उपयोगकर्ताओं द्वारा किसी भी अनुचित तरीके से उपयोग करने के लिए जिम्मेदार नहीं हैं। खेल के परिणाम पूरी तरह से यादृच्छिक होते हैं और किसी भी बाहरी कारक से प्रभावित नहीं होते। खेल का उद्देश्य केवल मनोरंजन है, और किसी भी प्रकार की प्रतिस्पर्धा या पुरस्कार की गारंटी नहीं है।</p>
+    </div>
+    
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <div class="setup">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="players-container">
+                <div class="player player1">
+                    <h2 id="player1DisplayName">Player 1</h2>
+                    <input type="number" id="player1Guess" placeholder="Enter Player 1's guess">
+                    <button onclick="makeGuess('player1')">Submit Guess</button>
+                    <p id="player1Feedback"></p>
+                    <p id="player1GuessCount"></p>
+                </div>
+                <div class="player player2">
+                    <h2 id="player2DisplayName">Player 2</h2>
+                    <input type="number" id="player2Guess" placeholder="Enter Player 2's guess">
+                    <button onclick="makeGuess('player2')">Submit Guess</button>
+                    <p id="player2Feedback"></p>
+                    <p id="player2GuessCount"></p>
+                </div>
+            </div>
+            <div id="winnerImage" style="display: none;">
+                <img src="winner.png" alt="Winner Image" class="winner-img">
+                <p id="winnerMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game - Horizontal Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="disclaimer">
+     <h2> (Disclaimer)</h2>
+        
+        <p>इस खेल का उद्देश्य केवल मनोरंजन है और यह किसी भी प्रकार की वित्तीय या वास्तविक पुरस्कार की गारंटी नहीं देता है। उपयोगकर्ता इस खेल के सभी नियमों और शर्तों को स्वीकार करते हैं। खेल के दौरान किए गए किसी भी अनुमान या उत्तर की सटीकता की कोई गारंटी नहीं है। यदि आप किसी भी तरह की समस्याओं का सामना करते हैं या इस खेल से संबंधित किसी भी प्रकार की चिंता है, तो कृपया उचित प्राधिकृत कानूनी सलाह प्राप्त करें।</p>
+        <p>हम इस खेल को उपयोगकर्ताओं द्वारा किसी भी अनुचित तरीके से उपयोग करने के लिए जिम्मेदार नहीं हैं। खेल के परिणाम पूरी तरह से यादृच्छिक होते हैं और किसी भी बाहरी कारक से प्रभावित नहीं होते। खेल का उद्देश्य केवल मनोरंजन है, और किसी भी प्रकार की प्रतिस्पर्धा या पुरस्कार की गारंटी नहीं है।</p>
+        <p><h3>Desclaimer Likhne Ka Trika Thoda Unik Hai Anyway Aap Game Pe Focous Kro OR Iss game me koi bhi Vittiy Jokhim syamil nhi hai</h3></p>
+    </div>
+
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <div class="setup">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="players-container">
+                <div class="player player1">
+                    <h2 id="player1DisplayName">Player 1</h2>
+                    <input type="number" id="player1Guess" placeholder="Enter Player 1's guess">
+                    <button onclick="makeGuess('player1')">Submit Guess</button>
+                    <p id="player1Feedback"></p>
+                    <p id="player1GuessCount"></p>
+                </div>
+                <div class="player player2">
+                    <h2 id="player2DisplayName">Player 2</h2>
+                    <input type="number" id="player2Guess" placeholder="Enter Player 2's guess">
+                    <button onclick="makeGuess('player2')">Submit Guess</button>
+                    <p id="player2Feedback"></p>
+                    <p id="player2GuessCount"></p>
+                </div>
+            </div>
+            <div id="winnerImage" style="display: none;">
+                <img src=" " alt="Winner Image" class="winner-img">
+                <img src=" https://th.bing.com/th/id/OIP.8hR82d2RDynF1D9VsRo3SwHaHa?w=193&h=193&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Winner2 Image"  clss="Winner-img">
+                <p id="winnerMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game - Horizontal Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="disclaimer">
+     <h2> (Disclaimer)</h2>
+        
+        <p>इस खेल का उद्देश्य केवल मनोरंजन है और यह किसी भी प्रकार की वित्तीय या वास्तविक पुरस्कार की गारंटी नहीं देता है। उपयोगकर्ता इस खेल के सभी नियमों और शर्तों को स्वीकार करते हैं। खेल के दौरान किए गए किसी भी अनुमान या उत्तर की सटीकता की कोई गारंटी नहीं है। यदि आप किसी भी तरह की समस्याओं का सामना करते हैं या इस खेल से संबंधित किसी भी प्रकार की चिंता है, तो कृपया उचित प्राधिकृत कानूनी सलाह प्राप्त करें।</p>
+        <p>हम इस खेल को उपयोगकर्ताओं द्वारा किसी भी अनुचित तरीके से उपयोग करने के लिए जिम्मेदार नहीं हैं। खेल के परिणाम पूरी तरह से यादृच्छिक होते हैं और किसी भी बाहरी कारक से प्रभावित नहीं होते। खेल का उद्देश्य केवल मनोरंजन है, और किसी भी प्रकार की प्रतिस्पर्धा या पुरस्कार की गारंटी नहीं है।</p>
+        <p><h3>Desclaimer Likhne Ka Trika Thoda Unik Hai Anyway Aap Game Pe Focous Kro OR इस खेल में आदत लगना या आर्थिक जोखिम संभव nhi है। जिम्मेदारी Se Na खेले।</h3></p>
+    </div>
+
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <div class="setup">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="players-container">
+                <div class="player player1">
+                    <h2 id="player1DisplayName">Player 1</h2>
+                    <input type="number" id="player1Guess" placeholder="Enter Player 1's guess">
+                    <button onclick="makeGuess('player1')">Submit Guess</button>
+                    <p id="player1Feedback"></p>
+                    <p id="player1GuessCount"></p>
+                </div>
+                <div class="player player2">
+                    <h2 id="player2DisplayName">Player 2</h2>
+                    <input type="number" id="player2Guess" placeholder="Enter Player 2's guess">
+                    <button onclick="makeGuess('player2')">Submit Guess</button>
+                    <p id="player2Feedback"></p>
+                    <p id="player2GuessCount"></p>
+                </div>
+            </div>
+            <div id="winnerImage" style="display: none;">
+                <img src=" " alt="Winner Image" class="winner-img">
+                <img src=" https://th.bing.com/th/id/OIP.8hR82d2RDynF1D9VsRo3SwHaHa?w=193&h=193&c=7&r=0&o=5&dpr=2&pid=1.7" alt="Winner2 Image"  clss="Winner-img">
+                <p id="winnerMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game - Horizontal Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="disclaimer">
+        <h2>अस्वीकृति (Disclaimer)</h2>
+        <p>इस खेल का उद्देश्य केवल मनोरंजन है और यह किसी भी प्रकार की वित्तीय या वास्तविक पुरस्कार की गारंटी नहीं देता है। उपयोगकर्ता इस खेल के सभी नियमों और शर्तों को स्वीकार करते हैं। खेल के दौरान किए गए किसी भी अनुमान या उत्तर की सटीकता की कोई गारंटी नहीं है। यदि आप किसी भी तरह की समस्याओं का सामना करते हैं या इस खेल से संबंधित किसी भी प्रकार की चिंता है, तो कृपया उचित प्राधिकृत कानूनी सलाह प्राप्त करें।</p>
+        <p>हम इस खेल को उपयोगकर्ताओं द्वारा किसी भी अनुचित तरीके से उपयोग करने के लिए जिम्मेदार नहीं हैं। खेल के परिणाम पूरी तरह से यादृच्छिक होते हैं और किसी भी बाहरी कारक से प्रभावित नहीं होते। खेल का उद्देश्य केवल मनोरंजन है, और किसी भी प्रकार की प्रतिस्पर्धा या पुरस्कार की गारंटी नहीं है।</p>
+    </div>
+
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <div class="setup">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="players-container">
+                <div class="player player1">
+                    <h2 id="player1DisplayName">Player 1</h2>
+                    <input type="number" id="player1Guess" placeholder="Enter Player 1's guess">
+                    <button onclick="makeGuess('player1')">Submit Guess</button>
+                    <p id="player1Feedback"></p>
+                    <p id="player1GuessCount"></p>
+                </div>
+                <div class="player player2">
+                    <h2 id="player2DisplayName">Player 2</h2>
+                    <input type="number" id="player2Guess" placeholder="Enter Player 2's guess">
+                    <button onclick="makeGuess('player2')">Submit Guess</button>
+                    <p id="player2Feedback"></p>
+                    <p id="player2GuessCount"></p>
+                </div>
+            </div>
+            <div id="winnerImage" style="display: none;">
+                <img src="winner.png" alt="Winner Image" class="winner-img">
+                <p id="winnerMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+ 
+
+
+
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game - Horizontal Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    Disclaimer Section
+    <div class="disclaimer">
+        <h2>अस्वीकृति (Disclaimer)</h2>
+        <p>इस खेल का उद्देश्य केवल मनोरंजन है और यह किसी भी प्रकार की वित्तीय या वास्तविक पुरस्कार की गारंटी नहीं देता है। उपयोगकर्ता इस खेल के सभी नियमों और शर्तों को स्वीकार करते हैं। खेल के दौरान किए गए किसी भी अनुमान या उत्तर की सटीकता की कोई गारंटी नहीं है। यदि आप किसी भी तरह की समस्याओं का सामना करते हैं या इस खेल से संबंधित किसी भी प्रकार की चिंता है, तो कृपया उचित प्राधिकृत कानूनी सलाह प्राप्त करें।</p>
+        <p>हम इस खेल को उपयोगकर्ताओं द्वारा किसी भी अनुचित तरीके से उपयोग करने के लिए जिम्मेदार नहीं हैं। खेल के परिणाम पूरी तरह से यादृच्छिक होते हैं और किसी भी बाहरी कारक से प्रभावित नहीं होते। खेल का उद्देश्य केवल मनोरंजन है, और किसी भी प्रकार की प्रतिस्पर्धा या पुरस्कार की गारंटी नहीं है।</p>
+    </div> -->
+
+    <!-- Main Game Container
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <div class="setup">
+            <h2>Enter Player Names</h2>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div class="game" style="display: none;">
+            <div class="players-container">
+                <div class="player player1">
+                    <h2 id="player1DisplayName">Player 1</h2>
+                    <input type="number" id="player1Guess" placeholder="Enter Player 1's guess">
+                    <button onclick="makeGuess('player1')">Submit Guess</button>
+                    <p id="player1Feedback"></p>
+                    <p id="player1GuessCount"></p>
+                </div>
+                <div class="player player2">
+                    <h2 id="player2DisplayName">Player 2</h2>
+                    <input type="number" id="player2Guess" placeholder="Enter Player 2's guess">
+                    <button onclick="makeGuess('player2')">Submit Guess</button>
+                    <p id="player2Feedback"></p>
+                    <p id="player2GuessCount"></p>
+                </div>
+            </div>
+            <div id="winnerImage" style="display: none;">
+                <img src="winner.png" alt="Winner Image" class="winner-img">
+                <p id="winnerMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
